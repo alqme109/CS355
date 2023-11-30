@@ -1,0 +1,14 @@
+mkdir AliceFiles;
+cd AliceFiles;
+for i in {1..4}; do echo "Alice File $i Content" > "alice_file$i.txt"; done;
+echo "Matching File 5 Content" > "alice_file5.txt";
+cd ..;
+
+# For Bob
+mkdir BobFiles;
+cd BobFiles;
+for i in {1..4}; do echo "Bob File $i Content" > "bob_file$i.txt"; done;
+echo "Matching File 5 Content" > "bob_file5.txt";
+
+cd ..;
+
